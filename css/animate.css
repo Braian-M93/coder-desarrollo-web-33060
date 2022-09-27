@@ -1,0 +1,22 @@
+ul{
+    animation-duration: 3s;
+    animation-name:bounceInLeft;
+  }
+ 
+  
+  @keyframes bounceInLeft{
+     from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+  }
+
+  p{
+    animation-duration: 1s ;
+    animation-name: animate__fadeInRight ;
+ 
+  }

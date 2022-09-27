@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@1,100&display=swap");
+
+nav ul li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+nav ul li a {
+  color: black;
+}
+nav{
+  text-align: right;
+}
+nav li{
+display: inline;
+margin: 15px;
+padding: 15px;
+}
+
+h1 {
+  color: blue;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+body {
+  background-image: url(../img/bg/pescaderia41.jpg);
+}
+.text-center {
+  text-align: center;
+}
+article p {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 4rem;
+  font-family: "Amatic SC", cursive;
+}
+header a img {
+  border-radius: 45%;
+}
+.presentacion {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+a img {
+  width: 30%;
+  border-radius: 10%;
+}
+.img {
+  width: 20;
+ text-align: center;
+}
+.salmonete {
+  width: 25%;
+}
+.salmonete{
+  transition: 1s transform;
+}
+.salmonete:hover{
+transform: scale(150%);
+}
+.frutos{
+  transition: 1s transform;
+}
+.frutos:hover{
+  transform: scale(150%);
+}
+.elaborados{
+  transition: 1s transform;
+}
+.elaborados:hover{
+  transform: scale(150%);
+}
+div section img {
+width: 20%;
+text-align: center;
+border-radius: 15%;
+
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid{
+  width: 95%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-template-areas:
+  "art carou"
+  "img "
+}
+
+#art{
+  grid-area: art;
+}
+#carou{
+  grid-area: carou;
+}
+#img{
+  grid-area: img;
+}
+
