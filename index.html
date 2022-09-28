@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="icon" type="icon" href="img/logo/ancla.webp" />
     <title>Fresh Fish</title>
   </head>
@@ -15,40 +17,82 @@
         <img src="img/logo/logo-pescaderia.jpg" alt="logo de pescaderia" />
       </a>
     </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html">inicio</a>
-        </li>
-        <li>
-          <a href="./pescados.html">pescados</a>
-        </li>
-        <li>
-          <a href="./frutos_de_mar.html">frutos de mar</a>
-        </li>
-        <li>
-          <a href="./elaborados.html">elaborados</a>
-        </li>
-        <li>
-          <a href="./contacto.html">contacto</a>
-        </li>
-      </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pescados.html">pescados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="frutos_de_mar.html"
+                >frutos de mar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="elaborados.html">elaborados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+
     <main class="grid">
-      <p class="carou">aca un carousel de fotos</p>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/elaborados/Merluza_a_las_finas_Hierbas_Filet.jpg" class="d-block w-80" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/frutos_de_mar/Mix_de_Mariscos_Cazuela.jpg" class="d-block w-80" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/pesca/filet-de-chernia.jpg" class="d-block w-80" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+              
       <article class="art">
         <h1>Nosotros</h1>
-      
+
         <p class="text-center presentacion">
-          Fresh Fish es una familia nacida en Argentina y
-          Además de la venta en nuestros locales, ofrecemos un servicio de delivery on line que de forma fácil,
-           cómoda y accesible te permite ahorrar tiempo y recibir 
-           el producto de manera segura en la puerta de tu casa. 
-           El compromiso con lo que hacemos y la calidad garantizan 
-           la llegada a tu hogar de nuestros pescados y mariscos,
-            al mejor precio y con el mejor servicio.
-          Trabajamos día a día para acercarle a las familias argentinas los beneficios de nuestros productos,
-           porque creemos en la importancia de comer rico y saludable.
+          Fresh Fish es una familia nacida en Argentina y Además de la venta en
+          nuestros locales, ofrecemos un servicio de delivery on line que de
+          forma fácil, cómoda y accesible te permite ahorrar tiempo y recibir el
+          producto de manera segura en la puerta de tu casa. El compromiso con
+          lo que hacemos y la calidad garantizan la llegada a tu hogar de
+          nuestros pescados y mariscos, al mejor precio y con el mejor servicio.
+          Trabajamos día a día para acercarle a las familias argentinas los
+          beneficios de nuestros productos, porque creemos en la importancia de
+          comer rico y saludable.
         </p>
       </article>
       <div class="img">
@@ -62,13 +106,15 @@
         <a href="./frutos_de_mar.html">
           <img
             src="img/frutos_de_mar/Mix_de_Mariscos_Cazuela.jpg"
-            alt="enlace a frutos_de_mar" class="frutos"
+            alt="enlace a frutos_de_mar"
+            class="frutos"
           />
         </a>
         <a href="./elaborados.html">
           <img
             src="img/elaborados/Empanada_de_Merluza3.jpg"
-            alt="enlace a elaborados de la pescaderia" class="elaborados"
+            alt="enlace a elaborados de la pescaderia"
+            class="elaborados"
           />
         </a>
       </div>

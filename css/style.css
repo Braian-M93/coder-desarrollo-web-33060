@@ -9,13 +9,13 @@ nav ul li {
 nav ul li a {
   color: black;
 }
-nav{
+nav {
   text-align: right;
 }
-nav li{
-display: inline;
-margin: 15px;
-padding: 15px;
+nav li {
+  display: inline;
+  margin: 15px;
+  padding: 15px;
 }
 
 h1 {
@@ -49,43 +49,42 @@ a img {
 }
 .img {
   width: 20;
- text-align: center;
+  text-align: center;
 }
 .salmonete {
   width: 25%;
 }
-.salmonete{
+.salmonete {
   transition: 1s transform;
 }
-.salmonete:hover{
-transform: scale(150%);
-}
-.frutos{
-  transition: 1s transform;
-}
-.frutos:hover{
+.salmonete:hover {
   transform: scale(150%);
 }
-.elaborados{
+.frutos {
   transition: 1s transform;
 }
-.elaborados:hover{
+.frutos:hover {
+  transform: scale(150%);
+}
+.elaborados {
+  transition: 1s transform;
+}
+.elaborados:hover {
   transform: scale(150%);
 }
 div section img {
-width: 20%;
-text-align: center;
-border-radius: 15%;
-
+  width: 20%;
+  text-align: center;
+  border-radius: 15%;
 }
-.flex{
+.flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
-.grid{
+.grid {
   width: 95%;
   display: grid;
   margin: auto;
@@ -93,17 +92,16 @@ border-radius: 15%;
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 20px;
   grid-template-areas:
-  "art carou"
-  "img "
+    "art carou"
+    "img ";
 }
 
-#art{
+#art {
   grid-area: art;
 }
-#carou{
+#carou {
   grid-area: carou;
 }
-#img{
+#img {
   grid-area: img;
 }
-
